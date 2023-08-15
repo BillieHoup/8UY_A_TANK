@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     
-    <script type="module" crossorigin src="/8UY_A_TANK/assets/index-7a01d9f7.js"></script>
-    <link rel="stylesheet" href="/8UY_A_TANK/assets/index-3ff94358.css">
+    <script type="module" crossorigin src="/8UY_A_TANK/assets/index-f6a3fe57.js"></script>
+    <link rel="stylesheet" href="/8UY_A_TANK/assets/index-82e41b9d.css">
   </head>
   <body>
     <header class="header">
@@ -24,21 +24,21 @@
         </div>
         <div>
         <ul class="header-menu-list">
-            <li class="mob-menu-item"><a href="#">About us</a></li>
-            <li class="mob-menu-item"><a href="#">Our products</a></li>
-            <li class="mob-menu-item"><a href="#">Price</a></li>
-            <li class="mob-menu-item"><a href="#">Bestsellers</a></li>
+            <li class="mob-menu-item"><a href="#about">About us</a></li>
+            <li class="mob-menu-item"><a href="#our-products">Our products</a></li>
+            <li class="mob-menu-item"><a href="#price">Price</a></li>
+            <li class="mob-menu-item"><a href="#bestsellers">Bestsellers</a></li>
             <li class="mob-menu-item"><a href="#reviews">Reviews</a></li>
-            <li class="mob-menu-item"><a href="#">Contacts</a></li>
+            <li class="mob-menu-item"><a href="#subscription">Contacts</a></li>
         </ul>
     </div>
     
-        <button type="button" class="mob-menu-open" data-menu-open><svg width="32" height="32">
+        <button type="button" class="mob-menu-open" data-menu-open style="padding: 0;"><svg width="32" height="32">
             <use href="/8UY_A_TANK/assets/symbol-defs-5f4d953a.svg#icon-burger"></use>
           </svg></button>
           <!----------------------- MOB-MENU ------------------------------>
       <div class="mob-menu is-hidden" data-menu>
-        <div class="mob-header-container">
+        <div class="header mob-header-container">
             <a href="./index.html" class="header-logo"><svg class="logo-icon" width="100" height="18">
                 <use href="/8UY_A_TANK/assets/symbol-defs-5f4d953a.svg#icon-logo"></use>
             </svg></a>
@@ -49,12 +49,12 @@
         </button>
         </div>
         <ul class="mob-menu-list">
-            <li class="mob-menu-item"><a href="#">About us</a></li>
-            <li class="mob-menu-item"><a href="#">Our products</a></li>
-            <li class="mob-menu-item"><a href="#">Price</a></li>
-            <li class="mob-menu-item"><a href="#">Bestsellers</a></li>
+            <li class="mob-menu-item"><a href="#about">About us</a></li>
+            <li class="mob-menu-item"><a href="#our-products">Our products</a></li>
+            <li class="mob-menu-item"><a href="#price">Price</a></li>
+            <li class="mob-menu-item"><a href="#bestsellers">Bestsellers</a></li>
             <li class="mob-menu-item"><a href="#reviews">Reviews</a></li>
-            <li class="mob-menu-item"><a href="#">Contacts</a></li>
+            <li class="mob-menu-item"><a href="#subscription">Contacts</a></li>
         </ul>
     </div>
     </div>
@@ -71,7 +71,7 @@
         </div>
     </div>
 </section>
-    <section class="about-us">
+    <section id="about" class="about-us">
     <div class="about-cont-flex">
     <div class="about-container">
         <h2 class="about-name-sec">About us</h2>
@@ -138,15 +138,32 @@
         <h2 class="section-product">Our products</h2>
         <ul class="product-list list">
             <li class="product-title">
-                <img srcset="/8UY_A_TANK/assets/desctop-product5-1x-6fabe8ab.jpg 1x, /8UY_A_TANK/assets/desctop-product5-2x-84a58396.jpg 2x"
-                    src="/8UY_A_TANK/assets/desctop-product5-1x-6fabe8ab.jpg" alt="minimalist storage solutions" width="343" height="300"
-                    class="product-img">
+                <picture>
+                    <source srcset="/8UY_A_TANK/assets/desctop-product5-1x-6fabe8ab.jpg 1x, /8UY_A_TANK/assets/desctop-product5-2x-84a58396.jpg 2x" media="(min-width: 1440px)" />
+
+                    <source srcset="./img/tablet-product4-1x.jpg 1x,
+                                              ./img/tablet-product4-2x 2x" media="(min-width: 768px)" />
+
+                    <img srcset="/8UY_A_TANK/assets/mobile-product3-1x-62576be4.jpg 1x, /8UY_A_TANK/assets/mobile-product3-2x-4b30560d.jpg 2x"
+                        src="/8UY_A_TANK/assets/mobile-product3-1x-62576be4.jpg" alt="minimalist storage solutions" width="343" height="300"
+                        class="product-img">
+                </picture>
+
                 <p class="product-text">Minimalist storage solutions</p>
             </li>
             <li class="product-title">
-                <img srcset="/8UY_A_TANK/assets/desctop-product6-1x-081ac9da.jpg 1x, /8UY_A_TANK/assets/desctop-product6-2x-70dc0e33.jpg 2x"
-                    src="/8UY_A_TANK/assets/desctop-product6-1x-081ac9da.jpg" alt="handcrafted minimalist seating" width="343" height="300"
-                    class="product-img">
+                <picture>
+                    <source srcset="/8UY_A_TANK/assets/desctop-product6-1x-081ac9da.jpg 1x, /8UY_A_TANK/assets/desctop-product6-2x-70dc0e33.jpg 2x"
+                        media="(min-width: 1440px)" />
+
+                    <source srcset="/8UY_A_TANK/assets/tablet-product5-1x-93fc48ad.jpg 1x, /8UY_A_TANK/assets/tablet-product5-2x-e0c697a7.jpg 2x"
+                        media="(min-width: 768px)" />
+
+                    <img srcset="/8UY_A_TANK/assets/tablet-product5-1x-93fc48ad.jpg 1x, /8UY_A_TANK/assets/tablet-product5-2x-e0c697a7.jpg 2x"
+                        src="/8UY_A_TANK/assets/tablet-product5-1x-93fc48ad.jpg" alt="handcrafted minimalist seating" width="343" height="300"
+                        class="product-img">
+                </picture>
+
                 <p class="product-text">Handcrafted minimalist seating</p>
             </li>
             <li class="product-title">
@@ -167,7 +184,7 @@
     
 <!-- BESTSELLERS -->
 
-<section class="bestsellers">
+<section id="bestsellers" class="bestsellers">
     <h2 class="title-bestseller">Bestsellers</h2>
 
     <div class="bestsellers-container bestseller-flex" >
@@ -295,7 +312,7 @@
             </ul>
         </div>
 </section>
-    <section class="subscription">
+    <section class="subscription" id="subscription">
   <div class="container">
     <div class="subscription-content">
       <h2 class="section-title">NEWSTELLER</h2>
